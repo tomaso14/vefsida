@@ -18,13 +18,95 @@
         <section id="verkefni1-info" class="wrapper style1">
             <div class="container">
                 <header class="major">
-                    <h2>Verkefni 1 - Tölvuvædd framleiðsla</h2>
-                    <p>Lýsing á verkefni 1 fer hér.</p>
+                    <h2>Lokaverkefni - Tölvuvædd framleiðsla</h2>
+                    <p>Lýsing á Lokaverkefninu fer hér.</p>
                 </header>
-                <p>Hér kemur ítarleg lýsing á verkefni 1, hvernig það var unnið og hvaða aðferðir voru notaðar.</p>
-                <img src="mynd_fyrir_verkefni_1.jpg" alt="Verkefni 1" style="max-width:100%;" />
+                <p>  </p>
+                
+                <h3>Lokaverkefni </h3>
+                <p>
+                   <p>Lokaverkefni þessa áfanga snérist um það að vinna heildstætt verkefni með notkun þeirra aðferða 
+                    sem við lærðum í námskeiðinu. Aðalþema verkefnisins var fræsun, en velja mátti milli þess að nota ShopBot, mjög stóran fræsara, eða Roland SRM-20, mun minni. Við ákváðum að nota minni fræsarann til að búa til mót</p>
+
+</p>
+                <img src="mynd af roland.jpeg" alt="Upphaflegt sniðmát" style="width: 300px; height: 200px;"></p>
+                
+                
+
+                <h3>Hluti 1:Val á hlut</h3>
+                <p>Fyrsta hugmyndin var að búa til einhvers konar mót fyrir sápu, mögulega eins og fight club sápan hér fyrir neðan. Hönnunarsvigrúmið fyrir sápu er hins vegar ekki mjög mikið þannig að við unnum ekki með þá hugmynd. Næsta pæling var að nota sömu aðferð til þess að búa til kerti</p>
+                    <img src="mynd fightclub.jpeg" alt="Verkefni birt á forsíðu" style="width: 400px; height: 400px;">
+                   </p>
+                    
+                
+                <p>Með fight club þemaið í huga, datt okkur í hug að gera það úr hausnum af Brad Pitt. Við fundum hins vegar engin open-source þrívíðarskönn af Brad Pitt á netinu þannig að við ákváðum í staðinn að vinna með eftirfarandi líkan af Obama sem við fundum á 
+                    <a href="https://free3d.com/3d-model/barack-obama-v2--837066.html" target="_blank">
+                        Sjá 3D módel Barack Obama hér
+                    </a>
+                    
+                og gera kerti úr líkaninu ásamt kertastjaka í bandaríkjalegu þema sem færi með.
+                
+
+
+                
+
+                
+                
+
+                
+      
+
+                <h3>Hluti 2-1: Hönnun á styttu</h3>
+                <p>Fyrsta skref hönnunar var að breyta líkaninu úr mesh í solid object. Til þess notuðum við modify>convert mesh fallið í fusion. Að því loknu fylgdum við þessum tveimur myndböndum frá Fab Lab akureyri sem sýna hvernig hægt er að skipta líkani í tvennt og undirbúa fyrir fræsun. Myndböndin
+                    má nálgast <a href="https://www.youtube.com/@fablabakureyri19" target="_blank">hér</a>.
+                  
+
+                   </p>
+                   <img src="obama mynd.jpg" alt="Verkefni 1" style="width: 400px; height: 400px;"></p>
+                
+                <p>Eitt sem við lentum í þegar við fórum að prófa manufacture hlutann var að reikningur á milli skrefa tók mjög langan tíma. Það hlaut að vera vegna þess að líkanið var of nákvæmt. Til þess að laga það og vonandi flýta ferlinu aðeins færðum við nálina aftur fyrir það þegar meshinu var breytt í solid body. Þar var hægt að nota mesh reduce fallið (mynd) til að einfalda líkanið töluvert. </p>
+                <iframe src="https://myhi423.autodesk360.com/shares/public/SH30dd5QT870c25f12fc99b42a8e603b9996?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+            
+
+            <h3>Hluti 2-2: Hönnun kertastjaka</h3>
+
+            <p>Til þess að hanna kertastjakann þá var byrjað að skilgreina breytur fyrir allar stærðir í modify>change parameters svo hægt væri að breyta líkaninu seinna. Síðan var teiknaður einn hringur og notað construct>offset plane þar  botnflöturinn var færður upp um ákveðna vegalengd. Á nýja fletinum var svo gerður nýr hringur og notað síðan create>loft fallið til að teikna á milli hringjanna.  Einnig var extrudað aðeins niður á við til að mynda botn. Síðan var extrudað  upp og notuð keimlík aðferð til að mynda stall og brún efst á stjakanum. Líkanið má sjá hér:
+                <iframe src="https://myhi423.autodesk360.com/shares/public/SH30dd5QT870c25f12fc3d72e2b0760a0a7c?mode=embed"
+        width="800"
+        height="600"
+        allowfullscreen="true"
+        webkitallowfullscreen="true"
+        mozallowfullscreen="true"
+        frameborder="0">
+</iframe>
+
+                Næst datt okkur í hug að bæta við mynd af einhverju sniðugu á stjakann. Í amerísku þema ákváðum við því að það þyrfti að vera bandaríski örninn. Fyrst fundum við flotta mynd af honum og settum inn í inkscape. Þar notuðum við trace bitmap fallið til að breyta í clipart og exportuðum því síðan sem .svg . Þá gátum við farið í insert>insert svg í fusion til þess að fá myndina inn sem sketch. Þá staðsetti ég örninn mitt inni í stjakanum og gerði cut extrude í báðar áttir. 
+                
+                Kertastjakinn var þá exportaður sem .3mf yfir í prusa slicer og prentaður. Hann kom svona út. 
+                Sjá má að skögunin í efri hlutanum hefði mátt hafa smá support en lítur annars nokkuð vel út.
+                  </p>
+                  <img src="IMG_7707.jpg" alt="GitHub uppsetning" style="width: 400px; height: 400px;" ></p>
+<img src="IMG_7707.jpg" alt="GitHub uppsetning" style="width: 400px; height: 400px;" ></p>
+            
+
+            <h3>Hluti 2-3: Mælingar á íhlutum</h3>
+            <p>Þá var komið að því að mæla íhlutina. Til fræsunarinnar fengum við að nota tvo bora, einn 1/16 tommu að þvermáli og annan 1/8 tommu. Mælingarnar má sjá hér </p> 
+            <img src="mæling 1 jpeg.jpg" alt="Upphaflegt sniðmát" style="width: 200px; height: 200px;"></p> 
+            <img src="mynd 2 .jpg" alt="Upphaflegt sniðmát" style="width: 200px; height: 200px;"></p> 
+             Annar átti að vera notaður í roughing og hinn í finishing. Fylgt var <a href="https://www.youtube.com/watch?v=mTTrG9jYQqc" target="_blank">Þessu</a>
+             myndbandi fyrir toolpathin en ákveðið var að fara einu sinni í gegn með stærri bornum og 3d>pocket clearing fallinu. Að því loknu væri 3d>parallel fallið notað til að fínpússa. Í pocket clearinginu notuðum við þessar stillingar. Mikilvægt er að hafa stepover sett sem manual í roughing hlutanum og að hafa maximum stepover sem helming af þvermáli bitans. Stepover er sú vegalengd sem borinn fer til hliðar á milli skipta. Í parallel hlutanum þarf því aðeins að minnka stepoverið til þess að auka gæði skurðarins. 
+
+             Bitinn sem við áttum að nota var vaxkubbur að þykkt ca. 34 mm og breidd og hæð 150 mm. Til þess að passa að líkanið væri rétt stærð fyrir kubbinn valdi ég alla bodya ásamt sketchum og notaði modify>scale fallið. Þá gat ég minnkað líkanið þangað til að hæðin var orðin cirka 28 mm.
+             
+             Sjá má á líkaninu að á baki obama er beinn veggur niður. Fusion átti í svolitlum erfiðleikum með að reikna toolpathið fyrir þann hluta módelsins. Við komumst að því að “Length below holder” í bitastillingunum var of lítið þannig að bitinn næði ekki alveg ofan í vegginn. Við hækkuðum það þá upp í 50 mm sem lagaði vandann. Þá var ekkert eftir nema að skella þessu í fræsarann.</p> 
+
+
+             <h3>Hluti 3: Fræsun</h3>
+             <p>Nú voru öll hönnunarsjöl tilbúin og búið að gera allar nauðsynlegar mælingar.  </p>
+
+            
+                
             </div>
-        </section>
 
         <!-- Footer -->
         <footer id="footer">
